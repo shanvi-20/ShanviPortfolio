@@ -1,0 +1,637 @@
+/* =================================
+   SHANVI PATEL - ROSE PINK PORTFOLIO
+================================= */
+
+/* Global Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #100B12;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+/* Navigation Bar */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: #190D16;
+    border-bottom: 1px solid #402033;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #F472B6;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #FBCFE8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #F472B6;
+}
+
+.nav-btn {
+    padding: 10px 22px;
+    color: #190D16;
+    background: #F472B6;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-btn:hover {
+    background: #FBCFE8;
+    box-shadow: 0 0 18px #F472B6;
+}
+
+/* Hero Section */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background: linear-gradient(135deg,
+            #100B12,
+            #24101E,
+            #100B12);
+}
+
+.hero-content {
+    max-width: 800px;
+    animation: fadeInUp 1s ease;
+}
+
+.welcome {
+    color: #F472B6;
+    letter-spacing: 4px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero h1 span {
+    color: #F472B6;
+}
+
+.hero h2 {
+    color: #FBCFE8;
+    font-size: 27px;
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    color: #D6C3D0;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 650px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: #F472B6;
+    color: #190D16;
+}
+
+.secondary-btn {
+    border: 2px solid #F472B6;
+    color: #FBCFE8;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover {
+    box-shadow: 0 0 18px #F472B6;
+    transform: translateY(-3px);
+}
+
+.hero-social {
+    margin-top: 35px;
+    color: #D6C3D0;
+}
+
+/* Section Headings */
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading p {
+    color: #F472B6;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.section-heading h2 {
+    color: white;
+    font-size: 38px;
+    margin-top: 10px;
+}
+
+.section-heading h2 span {
+    color: #F472B6;
+}
+
+/* About Section */
+
+.about {
+    padding: 90px 8%;
+    background: #190D16;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+.about-text h3 {
+    color: #F472B6;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #D6C3D0;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.detail-card {
+    background: #24101E;
+    padding: 30px 15px;
+    text-align: center;
+    border: 1px solid #583047;
+    border-radius: 12px;
+    transition: 0.3s;
+    animation: fadeInUp 0.8s ease both;
+}
+
+.detail-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 18px rgba(244, 114, 182, 0.25);
+    border-color: #F472B6;
+}
+
+.detail-card h3 {
+    color: #F472B6;
+    font-size: 32px;
+}
+
+.detail-card p {
+    color: #FBCFE8;
+    margin-top: 10px;
+}
+
+/* Skills Section */
+
+.skills {
+    padding: 90px 8%;
+    background: #100B12;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background: #190D16;
+    padding: 35px 20px;
+    text-align: center;
+    border: 1px solid #583047;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+}
+
+.skill-card h3 {
+    color: #F472B6;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.skill-card p {
+    color: #FBCFE8;
+    font-size: 14px;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    border-color: #F472B6;
+    box-shadow: 0 0 20px rgba(244, 114, 182, 0.3);
+}
+
+/* Projects Section */
+
+.projects {
+    padding: 90px 8%;
+    background: #190D16;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.project-card {
+    background: #24101E;
+    padding: 35px;
+    border: 1px solid #583047;
+    border-radius: 15px;
+    transition: 0.3s ease;
+    animation: fadeInUp 0.8s ease both;
+}
+
+.project-card:hover {
+    transform: translateY(-8px);
+    border-color: #F472B6;
+    box-shadow: 0 0 20px rgba(244, 114, 182, 0.25);
+}
+
+.project-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 114, 182, 0.15);
+    color: #F472B6;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+.project-card h3 {
+    color: white;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.project-card p {
+    color: #D6C3D0;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.project-tags span {
+    background: rgba(244, 114, 182, 0.12);
+    color: #FBCFE8;
+    padding: 7px 13px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.project-btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #F472B6;
+    color: #190D16;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+.project-btn:hover {
+    background: #FBCFE8;
+    box-shadow: 0 0 15px #F472B6;
+}
+
+/* Contact Section */
+
+.contact {
+    padding: 90px 8%;
+    background: #100B12;
+}
+
+.contact-container {
+    max-width: 750px;
+    margin: auto;
+    padding: 40px;
+    background: #190D16;
+    border: 1px solid #583047;
+    border-radius: 18px;
+    text-align: center;
+}
+
+.contact-container h3 {
+    color: #F472B6;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.contact-container>p {
+    color: #D6C3D0;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contact-item {
+    background: #24101E;
+    padding: 18px 10px;
+    border-radius: 10px;
+}
+
+.contact-item span {
+    color: #F472B6;
+    font-weight: bold;
+}
+
+.contact-item p {
+    color: #FBCFE8;
+    margin-top: 10px;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+}
+
+.contact-item a {
+    color: #FBCFE8;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    color: #F472B6;
+}
+
+.contact-btn {
+    display: inline-block;
+    background: #F472B6;
+    color: #190D16;
+    padding: 13px 28px;
+    margin: 8px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #FBCFE8;
+    box-shadow: 0 0 20px #F472B6;
+}
+
+/* Smooth Scrolling and Selection */
+
+::selection {
+    background: #F472B6;
+    color: #190D16;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #100B12;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #C84B8F;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #F472B6;
+}
+
+/* Animations */
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 6%;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero h2 {
+        font-size: 21px;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 65px 6%;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        padding: 25px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+    }
+}
+
+/* Footer Section */
+.footer {
+    background: #190D16;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 1px solid #583047;
+    margin-top: 40px;
+}
+
+.footer p {
+    color: #D6C3D0;
+    font-size: 14px;
+    margin: 8px 0;
+}
+
+.footer span {
+    color: #F472B6;
+    font-weight: bold;
+}
+
+.footer span:hover {
+    color: #FBCFE8;
+    text-shadow: 0 0 10px #F472B6;
+}
+
+/* Rose Pink Button Glow */
+.btn,
+button {
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: #F472B6;
+    color: #100B12;
+    box-shadow: 0 0 10px #F472B6,
+        0 0 25px #F472B6;
+    transform: translateY(-4px);
+}
+
+/* Rose Pink Button Glow */
+.btn,
+button {
+    transition: all 0.3s ease;
+}
+
+.btn:hover,
+button:hover {
+    background: #F472B6;
+    color: #100B12;
+    box-shadow: 0 0 10px #F472B6,
+        0 0 25px #F472B6;
+    transform: translateY(-4px);
+}
+
+/* Skill Card Hover Glow */
+.skill-card {
+    transition: all 0.3s ease;
+    border: 1px solid #583047;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px);
+    border-color: #F472B6;
+    box-shadow: 0 0 12px #F472B6,
+        0 0 25px rgba(244, 114, 182, 0.3);
+}
